@@ -92,4 +92,7 @@ textarea[id="comment"] {
   ol[type="A"] > li {
     padding-left: 0px;
   }
+  input[type="radio"] {
+  margin: 0px 5px 0px 10px;
+}
 }
