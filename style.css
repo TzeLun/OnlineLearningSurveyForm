@@ -87,6 +87,6 @@ textarea[id="comment"] {
 @media screen and (max-width: 900px) {
   #survey-form {
     width: 100%;
-    padding: 20px;
+    padding: 30px;
   }
 }
