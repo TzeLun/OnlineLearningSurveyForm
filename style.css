@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  text-align: center;
+}
+#title {
+  color: #0b7d03;
+}
+#description {
+  color: black;
+}
+#survey-form {
+  background-color: #4d8a48;
+  margin: auto;
+  width: 60%;
+  border-radius: 10px;
+  padding: 60px;
+  text-align: left;
+  font-size: 20px;
+}
+input[id="name"],
+input[id="email"],
+input[id="number"],
+#dropdown {
+  display: block;
+  margin: 10px 0px 10px 0px;
+  width: 100%;
+  border-radius: 5px;
+  border: 3px ridge gray;
+  font-size: 20px;
+  color: #0b7d03;
+  background-color: #f2f8f1;
+}
+input[id="teach-material"] {
+  margin: 5px 10px 5px 0px;
+}
+.teach-material {
+  display: block;
+  margin: 10px 0px 10px 0px;
+  width: 100%;
+  border-radius: 5px;
+  border: 3px ridge gray;
+  font-size: 20px;
+  color: #0b7d03;
+  background-color: #f2f8f1;
+}
+.instruction {
+  margin: 10px 0px 10px 0px;
+}
+ol[type="1"] {
+  padding: 0px;
+}
+ol[type="A"] > li {
+  margin: 0px 0px 10px 0px;
+}
+input[type="radio"] {
+  margin: 0px 10px 0px 20px;
+}
+textarea[id="comment"] {
+  width: 100%;
+  display: block;
+  margin: 10px 0px 10px 0px;
+  border-radius: 5px;
+  border: 3px ridge gray;
+  font-size: 16px;
+  color: #0b7d03;
+  background-color: #f2f8f1;
+  resize: vertical;
+}
+#submit {
+  display: block;
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+  background-color: #0f3908;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+#submit:hover {
+  background-color: #10c25f;
+}
+@media screen and (max-width: 900px) {
+  #survey-form {
+    width: 100%;
+    padding: 30px;
+  }
+  ol[type="A"] > li {
+    padding-left: 0px;
+  }
+}
