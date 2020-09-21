@@ -90,6 +90,9 @@ textarea[id="comment"] {
   }
 }
 @media screen and (max-width: 500px) {
+  #survey-form {
+    padding: 30px;
+  }
   ol[type="A"] > li {
   padding-left: 0px;
 }
