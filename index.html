@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Learning Survey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Online Learning Survey Form</h1>
+    <p id="description">
+      Kindly take few minutes of your time to give us feedback on your online
+      classroom experience
+    </p>
+    <form action="" id="survey-form" autocomplete="on">
+      <ol type="1">
+        <li>
+          <label id="name-label" for="name">Student Username :</label>
+          <input
+            id="name"
+            type="text"
+            name="username"
+            placeholder="Username"
+            required
+          />
+        </li>
+
+        <li>
+          <label id="email-label" for="email">Email Address :</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="University Domain"
+            required
+          />
+        </li>
+
+        <li>
+          <label id="number-label" for="number">Year of Study :</label>
+          <input
+            id="number"
+            type="number"
+            placeholder="exp: 1"
+            name="Year"
+            min="1"
+            max="4"
+            required
+          />
+        </li>
+
+        <li>
+          <label for="dropdown">What department are you from?</label>
+          <select
+            id="dropdown"
+            name="department"
+            placeholder="Select An Option"
+            required
+          >
+            <option value="School of Business, Finance and Law">
+              School of Business, Finance and Law
+            </option>
+            <option value="School of Engineering">School of Engineering</option>
+            <option value="School of Language and Creative Arts">
+              School of Language and Creative Arts
+            </option>
+            <option value="School of Medical Sciences">
+              School of Medical Sciences
+            </option>
+            <option value="School of Social Sciences">
+              School of Social Sciences
+            </option>
+          </select>
+        </li>
+
+        <li>
+          <label for="teach-material"
+            >What teaching facilities did your lecturer use in his/her online
+            class? Check all that are relevant below :</label
+          ><br />
+          <input
+            id="teach-material"
+            type="checkbox"
+            name="teach-material"
+            value="Lecture Notes"
+          />Lecture Notes<br />
+          <input
+            id="teach-material"
+            type="checkbox"
+            name="teach-material"
+            value="Online Videos"
+          />Online Videos<br />
+          <input
+            id="teach-material"
+            type="checkbox"
+            name="teach-material"
+            value="Audio Files"
+          />Audio Recordings<br />
+          <input
+            id="teach-material"
+            type="checkbox"
+            name="teach-material"
+            value="Live Demo"
+          />Live Demo<br />
+          <input
+            id="teach-material"
+            type="checkbox"
+            class="other"
+            value="Other"
+            name="teach-material"
+            onclick="enquiry(this.checked)"
+            style="margin-bottom: 10px"
+          />Other<br />
+
+          <div id="otherEnq" style="display: none">
+            If Other, kindly share what they are :<br />
+            <input
+              id="teach-material"
+              name="teach-material"
+              type="text"
+              class="teach-material"
+              placeholder="Others...."
+            />
+          </div>
+        </li>
+        <li>
+          Please rate your experience below accordingly:
+          <ul class="instruction">
+            <li>1 - Highly Disagree</li>
+            <li>2 - Disagree</li>
+            <li>3 - Neutral</li>
+            <li>4 - Agree</li>
+            <li>5 - Highly Agree</li>
+          </ul>
+          <ol type="A">
+            <li>
+              <label for="Q1">You concentrated better in online classroom</label
+              ><br />
+              <input
+                id="Q1"
+                type="radio"
+                name="Q1"
+                value="Highly Disagree"
+                required
+              />1 <input id="Q1" type="radio" name="Q1" value="Disagree" />2
+              <input id="Q1" type="radio" name="Q1" value="Neutral" />3
+              <input id="Q1" type="radio" name="Q1" value="Agree" />4
+              <input id="Q1" type="radio" name="Q1" value="Highly Agree" />5
+            </li>
+
+            <li>
+              <label for="Q2"
+                >Lecturers were helpful without face-to-face guidance</label
+              ><br />
+              <input
+                id="Q2"
+                type="radio"
+                name="Q2"
+                value="Highly Disagree"
+                required
+              />1 <input id="Q2" type="radio" name="Q2" value="Disagree" />2
+              <input id="Q2" type="radio" name="Q2" value="Neutral" />3
+              <input id="Q2" type="radio" name="Q2" value="Agree" />4
+              <input id="Q2" type="radio" name="Q2" value="Highly Agree" />5
+            </li>
+
+            <li>
+              <label for="Q3"
+                >Online classrooms gave flexibility in your study
+                schedule</label
+              ><br />
+              <input
+                id="Q3"
+                type="radio"
+                name="Q3"
+                value="Highly Disagree"
+                required
+              />1 <input id="Q3" type="radio" name="Q3" value="Disagree" />2
+              <input id="Q3" type="radio" name="Q3" value="Neutral" />3
+              <input id="Q3" type="radio" name="Q3" value="Agree" />4
+              <input id="Q3" type="radio" name="Q3" value="Highly Agree" />5
+            </li>
+
+            <li>
+              <label for="Q4"
+                >Online lectures motivated you to study independently</label
+              ><br />
+              <input
+                id="Q4"
+                type="radio"
+                name="Q4"
+                value="Highly Disagree"
+                required
+              />1 <input id="Q4" type="radio" name="Q4" value="Disagree" />2
+              <input id="Q4" type="radio" name="Q4" value="Neutral" />3
+              <input id="Q4" type="radio" name="Q4" value="Agree" />4
+              <input id="Q4" type="radio" name="Q4" value="Highly Agree" />5
+            </li>
+
+            <li>
+              <label for="Q5"
+                >Lecture materials were adequately provided for most
+                modules</label
+              ><br />
+              <input
+                id="Q5"
+                type="radio"
+                name="Q5"
+                value="Highly Disagree"
+                required
+              />1 <input id="Q5" type="radio" name="Q5" value="Disagree" />2
+              <input id="Q5" type="radio" name="Q5" value="Neutral" />3
+              <input id="Q5" type="radio" name="Q5" value="Agree" />4
+              <input id="Q5" type="radio" name="Q5" value="Highly Agree" />5
+            </li>
+          </ol>
+        </li>
+
+        <li>
+          <label for="comment"
+            >Any additional remarks or suggestions for future improvements in
+            the system?</label
+          ><br />
+          <textarea
+            id="comment"
+            name="comment"
+            placeholder="Enter Your Comments Here..."
+          ></textarea>
+        </li>
+      </ol>
+      <button type="submit" id="submit" value="submit">Submit</button>
+    </form>
+
+    <script>
+      function enquiry(check) {
+        var enq = document.getElementById("otherEnq");
+        if (check == true) {
+          enq.style.display = "block";
+        } else {
+          enq.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
